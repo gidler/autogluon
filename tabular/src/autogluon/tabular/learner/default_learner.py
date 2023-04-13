@@ -56,6 +56,9 @@ class DefaultLearner(AbstractTabularLearner):
         """
         # TODO: if provided, feature_types in X, X_val are ignored right now, need to pass to Learner/trainer and update this documentation.
         self._time_limit = time_limit
+        logger.log(20, f'==========================================================================================================')
+        logger.log(20, f'====================================== CUSTOM BRANCH FLAG ================================================')
+        logger.log(20, f'==========================================================================================================')
         if time_limit:
             logger.log(20, f'Beginning AutoGluon training ... Time limit = {time_limit}s')
         else:
